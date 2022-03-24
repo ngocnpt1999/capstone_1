@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="theme-color" content="#ff5959">
-    <meta name="msapplication-navbutton-color" content="#ff5959">
-    <link rel="shortcut icon" href="https://file.domains/20200430/img/favicon.ico">
-    <link rel="image_src" href="https://resoomer.com/img/resoomer-logo-simple.png" />
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <script src="/js/jQuery.js"></script>
@@ -19,53 +15,6 @@
 
 <body>
     <a href="#top" id="arrowTop" class="DisplayNone page-scroll"> &#8593; </a>
-    <div id="preloaderContentAPI" class="DisplayNone">&nbsp;</div>
-    <div id="translationContent" class="DisplayNone">
-        <div id="translationView">
-            <form target="translationFrame" method="post" action="#" class="DisplayNone">
-                <textarea name="content" id="downloadHTMLcontentForTranslation"></textarea>
-                <input type="submit" id="btnFormTranslation" />
-            </form>
-            <iframe name="translationFrame" id="translationFrame" src="" allowfullscreen></iframe>
-            <div id="conteneurCloseTrans">
-                <hr />
-                <a href="#" onClick="closeTranslate();" title="" class="btnSendText">Đóng cửa sổ</a>
-            </div>
-        </div>
-        <div id="alphaTranslation">&nbsp;</div>
-    </div>
-    <div id="RewriterContent" class="DisplayNone">
-        <div id="RewriterView">
-            <form target="RewriterFrame" method="post" action="#" class="DisplayNone">
-                <textarea name="content" id="downloadHTMLcontentForRewriter"></textarea>
-                <textarea name="originalContent" id="originalContent"></textarea>
-                <input type="submit" id="btnFormRewriter" />
-            </form>
-            <iframe name="RewriterFrame" id="RewriterFrame" src="" allowfullscreen></iframe>
-            <div id="conteneurCloseRewriter">
-                <hr />
-                <table style="width:100%;">
-                    <tr valign="top">
-                        <td width="70" height="40" style="text-align:left;">
-                            <form id="formStat" style="display:none;" target="Stat" method="post"></form>
-                            <div id="contenerFrameStat">
-                                <iframe width="30" height="30" name="Stat" id="Stat"></iframe>
-                                <div id="contenerFramePart">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="#" onClick="closeRewriter();" title="Đóng cửa sổ" class="btnSendText">Đóng cửa
-                                sổ</a>
-                        </td>
-                        <td width="70" height="40"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div id="alphaRewriter">&nbsp;</div>
-    </div>
-
     <!-- Heaser Area Start -->
     <header class="header-area">
         <!-- Navigation start -->
@@ -79,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand logo page-scroll notranslate" translate="no" href="#top">
-                        <h2>res<span>oo</span>mer</h2>
+                        <!-- <h2>res<span>oo</span>mer</h2> -->
                     </a>
                 </div>
 
@@ -87,12 +36,12 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <!--<li class="active"><a class="page-scroll" href="#top"><b>OO</b></a></li>-->
-                        <li><a class="page-scroll" href="#professionnel" title="Dịch vụ">Dịch vụ</a></li>
-                        <li><a class="page-scroll" href="#extension" title="Tiện ích mở rộng">Tiện ích mở rộng</a></li>
+                        <!-- <li><a class="page-scroll" href="#professionnel" title="Dịch vụ">Dịch vụ</a></li> -->
+                        <!-- <li><a class="page-scroll" href="#extension" title="Tiện ích mở rộng">Tiện ích mở rộng</a></li>
                         <li><a class="page-scroll" href="#useIt" title="Nó hoạt động như thế nào">Nó hoạt động như thế
                                 nào</a></li>
                         <li><a class="page-scroll" href="#entreprise" title="PREMIUM">PREMIUM</a></li>
-                        <li><a class="page-scroll" href="#contact" title="Tiếp xúc">Tiếp xúc</a></li>
+                        <li><a class="page-scroll" href="#contact" title="Tiếp xúc">Tiếp xúc</a></li> -->
                         <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
                     </ul>
                 </div>
@@ -106,10 +55,6 @@
         <div class="container-fluid" style="float:left; width:100%;">
             <div class="row" id="headerFeature">
                 <!-- Hero Title -->
-                <h1 class="fontLight">
-                    Tìm những điểm chính trong các văn bản của bạn và tóm tắt các ý <span>&laquo; phù hợp &raquo;</span>
-                    chỉ trong 1-Click
-                </h1>
                 <!-- Hero Subtitle -->
                 <!--<h5>we advice + we design + we develope</h5>-->
             </div>
@@ -132,7 +77,7 @@
                                                 </li>
                                                 <li class="li_2">
                                                     <input type="button" id="btnSendText_V2"
-                                                        class="btnSendText floatRight" value="Resoomer">
+                                                        class="btnSendText floatRight" value="Chuyển đổi">
                                                 </li>
                                             </ul>
                                         </div>
@@ -162,7 +107,7 @@
                                     <div class="OptionsMobileView">
                                         <p>
                                             <input type="button" id="btnSendText_V2_Mobile" class="btnSendText"
-                                                value="Resoomer" style="width:97%;">
+                                                value="Chuyển đổi" style="width:97%;">
                                         </p>
                                         <p style="text-align:center;">
                                             <a href="#"><span><u>Nhập khẩu tài
@@ -170,15 +115,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <input type="hidden" name="langSite" value="vi" />
+                                <!-- <input type="hidden" name="langSite" value="vi" />
                                 <input type="hidden" name="sampleText" id="sampleText" value="" />
                                 <input type="hidden" name="adBlockerDetect" id="adBlockerDetect" value="0" />
                                 <input type="hidden" name="enableProcess" id="enableProcess" value="0" />
                                 <input type="hidden" name="issetPost" id="issetPost" value="0" />
                                 <input type="hidden" name="keyForm" id="keyForm"
-                                    value="1647970713-391279052-829313901-19619091" />
-                                <input type="hidden" name="alternateAds" id="alternateAds" value="0" />
-                                <input type="hidden" name="alternateAdsWidth" id="alternateAdsWidth" value="" />
+                                    value="1647970713-391279052-829313901-19619091" /> -->
                             </fieldset>
                         </form>
                         <a href="#rightResoomer" class="page-scroll DisplayNone" id="goToResumer">&nbsp;</a>
@@ -187,8 +130,6 @@
                 <div class="col-sm-6 col-xs-12 no-padding">
                     <div class="about-us-right no-padding about-us-right-resoomer">
                         <div id="rightResoomer">
-                            <div id="adsContent">
-                            </div>
                             <div id="loaderContent_V2" class="DisplayNone">
                                 <p>&nbsp;</p>
                                 <span id="conteneurBar" class="initBar">
@@ -240,9 +181,6 @@
         <div class="container">
             <!-- Our service Section Title -->
             <h2 class="section-title text-center">AI LÀ NGƯỜI CHÚNG TÔI HƯỚNG ĐẾN?</h2>
-            <!-- Our service  Section Subtitle 
-                <p class="sub-title text-center">Que vous soyez un particulier, un professionnel ou une entreprise,<br> Resoomer vous aidera certainnement à résumer vos textes rapidement.</p>-->
-
             <div class="row our-services">
 
                 <!-- Single Service -->
@@ -415,124 +353,8 @@
                 </div>
 
             </div>
-
-            <!-- ///////////////////////// -->
-            <p>&nbsp;</p>
-            <h2 class="section-title text-center">HỌ ĐÃ TWEET</h2>
-            <div id="tweetsContent"></div>
-            <p>&nbsp;</p>
-            <!-- <p style="text-align:center;">
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@resoomer_"
-                    data-size="large">Tweeter</a>
-            </p> -->
         </div>
     </section>
-
-    <!-- End Of Our Services -->
-    <section class="about-us" id="extension"
-        style="box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76); background-color:#ff5959; clear:both;">
-        <div class="container">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h2 class="section-title text-center fontWhite">TỔNG HỢP BÀI VIẾT TRỰC TUYẾN CỦA BẠN TRONG 1-CLICK</h2>
-            <!-- <p class="textCentrer" style="min-height:170px;" id="contentImgExtensions"></p> -->
-            <p class="textCentrer">
-                <a href="#extension" title="Téléchargez l'extension pour votre navigateur"
-                    class="page-scroll formatResoomer fontLight" style="font-size:20px;" id="extensionBaseLine">Tải tiện
-                    ích mở rộng cho trình duyệt của bạn</a>
-            </p>
-            <p class="textCentrer fontWhite">
-                Lướt trực tuyến và tiết kiệm thời gian khi đọc trên internet! Tóm tắt các bài viết của bạn để
-                bạn có <br />thể đi đến ý chính của văn bản.
-            </p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-        </div>
-    </section>
-
-    <!-- Our HOW USE IT -->
-
-    <section class="our-services-section no-padding" id="useIt">
-        <div class="container">
-            <!-- Our service Section Title -->
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h2 class="section-title text-center">CHÚNG TÔI LÀM VIỆC NHƯ THẾ NÀO?</h2>
-            <!-- Our service  Section Subtitle -->
-            <p>
-            <table style="margin:0 auto;">
-                <tr>
-                    <td><br />Bạn có thể tóm tắt hoặc phân tích các văn bản tranh luận của bạn bất cứ <u>lúc nào bạn
-                            muốn:</u> : </td>
-                </tr>
-                <tr>
-                    <td>&bull; Bằng cách sao chép và dán chúng <a class="page-scroll" href="#top" title="">ở trên</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&bull; Hoặc bằng cách sử dụng các <a class="page-scroll" href="#extension" title="">tiện ích mở
-                            rộng của chúng tôi</a> tóm tắt bài viết trực tuyến của bạn</td>
-                </tr>
-            </table>
-            </p>
-            <p>&nbsp;</p>
-
-            <h5 class="text-center"><a href="#"><span>« <u class="fontLight" style="font-size:18px;">Các câu hỏi thường
-                            gặp</u> »</span></a></h5>
-            <p>&nbsp;</p>
-        </div>
-    </section>
-    <section class="our-services-section" id="entreprise" style="background:#f1f5f8;">
-        <div class="container-fluid">
-            <div class="row headerFeature">
-                <p>&nbsp;</p>
-                <!-- Our service Section Title -->
-                <h2 class="section-title text-center">TRỞ THÀNH PREMIUM</h2>
-                <!-- Our service  Section Subtitle -->
-                <p class="text-center">
-                    Nhập văn bản của bạn lên tới <strong>200 000 ký tự</strong>.
-                </p>
-                <p class="text-center">
-                    <a href="#" title="PREMIUM" class="formatResoomer">Khám phá</a>
-                </p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="our-services-section">
-        <div class="container-fluid">
-            <div class="row">
-                <p class="text-center">&nbsp;<br />Các đối tác của chúng tôi thích dùng Resoom cho văn bản của họ
-                    :<br />&nbsp;</p>
-                <p class="text-center" id="contentImgPartners">
-                    <img src="https://resoomer.com/themes/effacy/img/partners_logos/logo-journalism.gif"
-                        alt="Journalism.co.uk" title="Journalism.co.uk" height="50" />
-                    &nbsp; &nbsp;
-                    <img src="https://resoomer.com/themes/effacy/img/partners_logos/logo-brainbuxa.png" alt="BrainBuxa"
-                        title="BrainBuxa" height="50" />
-                    &nbsp; &nbsp;
-                    <img src="https://resoomer.com/themes/effacy/img/partners_logos/logo-geekhebdo.jpg" alt="GeekHebdo"
-                        title="GeekHebdo" height="50" />
-                    &nbsp; &nbsp;
-                    <a href="https://mx.jooble.org/trabajo-copywriter" title="Jooble" target="_blank">
-                        <img src="https://resoomer.com/themes/effacy/img/partners_logos/jooble.gif" alt="Jooble"
-                            title="Jooble" height="50" />
-                    </a>
-                </p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-            </div>
-        </div>
-    </section>
-    <!-- End Of HOW USE IT -->
-
-    <!-- Contact Us Section -->
-
-    <section class="contact-us-section section-padding" id="contact"></section>
-
-    <!-- End Of Contact Us Section -->
 
     <!-- Footer Section -->
     <footer class="footer-section">
@@ -583,8 +405,6 @@
     <!-- Bootstrap JS -->
     <script>
         $(window).load(function () {
-            $("#adsContent").addClass("DisplayNone");
-            $("div.adsFeature").addClass("DisplayNone");
             $("#contentText").keyup();
             $("#loaderContent_V2").addClass("DisplayNone");
             $("#conteneurBar").removeClass("initBar");
