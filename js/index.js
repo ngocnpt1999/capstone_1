@@ -55,7 +55,7 @@ noticeTextSize = function () {
 function textAreaAdjust(o) {
     if (window.screen.availWidth >= 500) {
         o.style.height = "1px";
-        o.style.height = (25 + o.scrollHeight) + "px";
+        o.style.height = (500 + o.scrollHeight) + "px";
     }
     var contentText = $("#contentText").val();
     noticeForText();
